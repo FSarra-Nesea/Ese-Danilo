@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-12">
+    <button class="btn btn-success my-3">add items</button>
+
+  </div>
+  <div class="col-12">
+    <ul class="list-group">
+      <a href="" class="list-group-item d-flex justify-content-between my-2 " *ngFor="let recipeEl of recipes">
+        <div>
+          <h3>{{recipeEl.name}}</h3>
+          <p>{{recipeEl.description}}</p>
+        </div>
+        <div>
+          <img [src]="recipeEl.imagePath" alt="" style="max-width:100px">
+        </div>
+      </a>
+    </ul>
+
+  </div>
+</div>
